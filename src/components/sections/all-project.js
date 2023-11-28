@@ -1,9 +1,7 @@
 import Image from "next/image";
-import img1 from "../../../public/all-project/1.png";
 import SectionTitle from "./section-title";
 
-const AllProject = () => {
-    const arr = [1, 2, 3, 4, 5, 6];
+const AllProject = ({ data }) => {
     return (
         <div className="py-[67px] section">
             <SectionTitle
@@ -11,22 +9,20 @@ const AllProject = () => {
                 desc="Better Agency/SEO Solution At Your Fingertips"
             />
             <section className="grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[50px]">
-                {arr.map((item) => (
+                {data.map(({ id, image, title }) => (
                     <div
-                        key={item}
+                        key={id}
                         className="bg-white rounded-[20px] shadow-[0px_4px_30px_0px_rgba(0,0,0,0.09)] p-[30px]"
                     >
                         <div className="relative h-[472px] overflow-hidden rounded-[20px]">
                             <Image
-                                src={img1}
+                                src={image}
                                 fill
                                 alt="image"
                                 className="rounded-[20px] object-cover hover:scale-110 duration-300"
                             />
                         </div>
-                        <h4 className="mt-[30px]">
-                            Lorem ipsum dolor sit consectutar
-                        </h4>
+                        <h4 className="mt-[30px]">{title}</h4>
                     </div>
                 ))}
             </section>
