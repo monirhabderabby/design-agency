@@ -22,4 +22,7 @@
     p {
         @apply text-[18px] text-[#000] font-maven font-normal;
     }
+    .container {
+        @apply max-w-[1280px] px-6 mx-auto;
+    }
 }

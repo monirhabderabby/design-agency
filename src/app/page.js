@@ -1,3 +1,3 @@
 export default function Home() {
-    return <main className="font-maven">Monir Hossain</main>;
+    return <main className="h-screen">Home</main>;
 }

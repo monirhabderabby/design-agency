@@ -1,3 +1,4 @@
+import SiteNavbar from "@/components/shared/navbar/navbar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -14,7 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={poppins.className}>{children}</body>
+            <body className={poppins.className}>
+                <SiteNavbar />
+                {/* paddint top 60px because SiteNavbar is fixed position */}
+                <main className="pt-[60px]">{children}</main>
+            </body>
         </html>
     );
 }
