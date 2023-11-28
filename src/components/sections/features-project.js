@@ -46,7 +46,7 @@ const FeaturedProject = () => {
         },
     ];
     return (
-        <div className="py-[61px] bg-lightGreen">
+        <div className="py-[61px] pb-[84px] bg-lightGreen">
             <section className="section h-auto">
                 <SectionTitle
                     title="Featured Project"
