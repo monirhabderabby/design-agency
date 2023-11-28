@@ -6,7 +6,7 @@ const Subscribe = () => {
                 <h3 className="max-w-[495px] text-center leading-10 mt-[22px]">
                     Subscribe to get the latest news about us
                 </h3>
-                <p className="text-[#8B8B8B] font-medium text-center">
+                <p className="text-[#8B8B8B] font-medium text-center py-4">
                     Please drop your email below to get daily update about what
                     we do
                 </p>
