@@ -53,12 +53,12 @@ const FeaturedProject = () => {
                     desc="We provide the Perfect Solution to your business growth"
                 />
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-[30px] mt-[72px]">
-                    <div className="relative space-y-[15px] col-span-2 row-span-2 h-full">
-                        <div className="relative h-[85%]">
+                    <div className="relative space-y-[15px] md:col-span-2 md:row-span-2 h-full">
+                        <div className="relative min-h-[188px] md:h-[85%]">
                             <Image
                                 src={data[0]["image"]}
                                 fill
-                                className="object-cover rounded-[20px]"
+                                className="object-cover rounded-[20px] "
                                 alt="project"
                             />
                         </div>

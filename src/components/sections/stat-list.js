@@ -36,7 +36,7 @@ const StatList = () => {
             {data.map(({ icon, id, value, title }) => (
                 <div
                     key={id}
-                    className="max-w-[288px] px-[50px] py-[46px]  flex flex-col justify-center items-center gap-[23px] rounded-[20px] shadow-[4px_9px_20px_0px_rgba(0,0,0,0.07)]"
+                    className="w-full md:max-w-[288px] px-[50px] py-[46px]  flex flex-col justify-center items-center gap-[23px] rounded-[20px] shadow-[4px_9px_20px_0px_rgba(0,0,0,0.07)]"
                 >
                     <div className="bg-lightGreen p-[35px] rounded-[20px] w-fit ">
                         <Image src={icon} width={40} height={40} alt="logo" />

@@ -43,8 +43,8 @@ const companies = [
 const Banner = () => {
     return (
         <div className="bg-[linear-gradient(180deg,_#D7F5DC_0%,_#D7F5DC_100%)] pt-[60px] min-h-screen pb-[50px]">
-            <section className="section flex flex-col md:flex-row items-center min-h-[calc(100vh-240px)] space-y-11 md:space-y-0 ">
-                <div className="flex-1">
+            <section className="section flex flex-col md:flex-col-reverse lg:flex-row items-center min-h-[calc(100vh-240px)] space-y-11 md:space-y-0 ">
+                <div className="flex-1 md:pb-[50px]">
                     <h1 className="max-w-[550px]">
                         Increase Your Customers Loyalty and Satisfaction
                     </h1>
@@ -56,7 +56,7 @@ const Banner = () => {
                         Get Started
                     </button>
                 </div>
-                <div className="flex-1 w-full space-y-[18px] pb-[50px]">
+                <div className="flex-1 w-full space-y-[18px] pb-[50px] pt-[50px] ">
                     <div className="flex  gap-[18px]">
                         <div className="h-[271px] w-[408px] rounded-[10px] relative">
                             <Image
@@ -66,7 +66,7 @@ const Banner = () => {
                                 className="rounded-[10px]"
                             />
                         </div>
-                        <div className="h-[271px] w-[180px] rounded-[10px] relative">
+                        <div className=" h-[271px] w-[180px] rounded-[10px] relative">
                             <Image
                                 src={image.img2}
                                 fill
