@@ -13,6 +13,11 @@ module.exports = {
             fontFamily: {
                 maven: ["Maven Pro", "sans-serif"],
             },
+            colors: {
+                siteGreen: "#20B15A",
+                lightGreen: "#F0FDF4",
+                softGreen: "#18c35c",
+            },
         },
     },
     darkMode: "class",

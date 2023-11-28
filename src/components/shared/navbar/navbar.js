@@ -7,6 +7,7 @@ import {
     NavbarMenu,
     NavbarMenuToggle,
 } from "@nextui-org/react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import SiteNavbarItem from "./site-navbar-item";
@@ -41,7 +42,7 @@ export default function SiteNavbar() {
         {
             id: 3,
             label: "Service",
-            href: "/service",
+            href: "/services",
         },
         {
             id: 2,
@@ -68,7 +69,7 @@ export default function SiteNavbar() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">ACME</p>
+                    <Image src="icons/logo.svg" width={155} height={60} />
                 </NavbarBrand>
             </NavbarContent>
 

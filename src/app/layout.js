@@ -1,3 +1,5 @@
+import TopLoaderProvider from "@/components/provider/top-loader-provider";
+import Footer from "@/components/shared/footer/footer";
 import SiteNavbar from "@/components/shared/navbar/navbar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -16,9 +18,11 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={poppins.className}>
+                <TopLoaderProvider />
                 <SiteNavbar />
                 {/* paddint top 60px because SiteNavbar is fixed position */}
-                <main className="pt-[60px]">{children}</main>
+                <main className="pt-[60px] section ">{children}</main>
+                <Footer />
             </body>
         </html>
     );
