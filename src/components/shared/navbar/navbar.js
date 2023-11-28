@@ -15,19 +15,6 @@ import SiteNavbarItem from "./site-navbar-item";
 export default function SiteNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const menuItems = [
-        "Profile",
-        "Dashboard",
-        "Activity",
-        "Analytics",
-        "System",
-        "Deployments",
-        "My Settings",
-        "Team Settings",
-        "Help & Feedback",
-        "Log Out",
-    ];
-
     const routes = [
         {
             id: 1,
@@ -68,9 +55,11 @@ export default function SiteNavbar() {
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden"
                 />
-                <NavbarBrand>
-                    <Image src="icons/logo.svg" width={155} height={60} />
-                </NavbarBrand>
+                <Link href="/">
+                    <NavbarBrand>
+                        <Image src="icons/logo.svg" width={155} height={60} />
+                    </NavbarBrand>
+                </Link>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
