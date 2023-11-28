@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
                 <TopLoaderProvider />
                 <SiteNavbar />
                 {/* paddint top 60px because SiteNavbar is fixed position */}
-                <main className="pt-[60px] section ">{children}</main>
+                <main>{children}</main>
                 <Footer />
             </body>
         </html>
