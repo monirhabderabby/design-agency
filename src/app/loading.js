@@ -1,3 +1,4 @@
+"use client";
 import styles from "@/assets/css/loader.module.css";
 
 const Loading = () => {

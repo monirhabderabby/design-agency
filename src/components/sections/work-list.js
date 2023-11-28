@@ -5,28 +5,27 @@ import icon2 from "../../../public/icons/heart.svg";
 import icon3 from "../../../public/icons/work.svg";
 import SectionTitle from "./section-title";
 
-const workList = [
-    {
-        id: 1,
-        icon: icon1,
-        title: "Grow Your Business",
-        des: "We help identify the best ways to improve your business",
-    },
-    {
-        id: 2,
-        icon: icon2,
-        title: "Grow Your Business",
-        des: "We help identify the best ways to improve your business",
-    },
-    {
-        id: 3,
-        icon: icon3,
-        title: "Grow Your Business",
-        des: "We help identify the best ways to improve your business",
-    },
-];
-
-const WorkList = () => {
+const WorkList = ({ data }) => {
+    const workList = [
+        {
+            id: 1,
+            icon: icon1,
+            title: data[0]["title"],
+            des: data[0]["des"],
+        },
+        {
+            id: 2,
+            icon: icon2,
+            title: data[1]["title"],
+            des: data[1]["des"],
+        },
+        {
+            id: 3,
+            icon: icon3,
+            title: data[2]["title"],
+            des: data[2]["des"],
+        },
+    ];
     return (
         <section className="section bg-white py-[67px]">
             <SectionTitle
