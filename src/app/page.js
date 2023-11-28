@@ -10,27 +10,31 @@ async function getData() {
     const res2 = await fetch(`${baseURL}/api/BrandList`);
     const res3 = await fetch(`${baseURL}/api/WorkList`);
     const res4 = await fetch(`${baseURL}/api/StatList`);
+    const res5 = await fetch(`${baseURL}/api/FeaturedProject`);
     const heroDataRes = await res1.json();
     const brandListRes = await res2.json();
     const workListRes = await res3.json();
     const statListRes = await res4.json();
+    const featuredProjectRes = await res5.json();
 
     return {
         heroData: heroDataRes,
         brandList: brandListRes,
         workList: workListRes,
         statList: statListRes,
+        featuredProjectData: featuredProjectRes,
     };
 }
 
 export default async function Home() {
-    const { heroData, brandList, workList, statList } = await getData();
+    const { heroData, brandList, workList, statList, featuredProjectData } =
+        await getData();
     return (
         <main>
             <Banner data={heroData} brandList={brandList} />
             <WorkList data={workList} />
             <StatList data={statList} />
-            <FeaturedProject />
+            <FeaturedProject data={featuredProjectData} />
             <Subscribe />
         </main>
     );
