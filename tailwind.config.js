@@ -17,6 +17,7 @@ module.exports = {
                 siteGreen: "#20B15A",
                 lightGreen: "#F0FDF4",
                 softGreen: "#18c35c",
+                lightGreen: "#D7F5DC",
             },
         },
     },

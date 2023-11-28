@@ -107,7 +107,6 @@ const Banner = () => {
                                         width={120}
                                         height={80}
                                         alt={img}
-                                        layout="responsive"
                                         className="aspect-video"
                                     />
                                 </div>

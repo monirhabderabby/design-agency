@@ -59,9 +59,12 @@ const Footer = () => {
                     <h6 className="text-white">Quick Links</h6>
                     <ul className="mt-[16px] space-y-[25px]">
                         {quickLinksRoutes.map(({ id, label, href }) => (
-                            <li key={id}>
+                            <li
+                                key={id}
+                                className="hover:translate-x-2 duration-300"
+                            >
                                 <Link
-                                    className="text-[18px] font-maven"
+                                    className="text-[18px] font-maven "
                                     href={href}
                                 >
                                     {label}
@@ -85,6 +88,9 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
+            <h6 className="text-white font-light section mt-[90px]">
+                Copyright Design Agency 2022
+            </h6>
         </div>
     );
 };
