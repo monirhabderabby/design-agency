@@ -16,7 +16,9 @@
     "next": "14.0.3",
     "next-nprogress-bar": "^2.1.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-countup": "^6.5.0",
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.5.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

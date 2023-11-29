@@ -4,6 +4,20 @@ import StatList from "@/components/sections/stat-list";
 import Subscribe from "@/components/sections/subscribe";
 import WorkList from "@/components/sections/work-list";
 
+export async function generateMetadata() {
+    const baseURL = process.env.baseURL;
+    const res = await fetch(`${baseURL}/api/SiteMeta/home`);
+    const data = await res.json();
+    return {
+        title: data[0]["title"],
+        description: data[0]["description"],
+        keywords: data[0]["keywords"],
+        openGraph: {
+            images: data[0]["image"],
+        },
+    };
+}
+
 async function getData() {
     const baseURL = process.env.baseURL;
     const res1 = await fetch(`${baseURL}/api/HeroList`);
